@@ -11,10 +11,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            List{
-                Cell()
-                Cell()
-                Text("-Hello, Yurik")
+            List(userResponse){user in
+                Cell(user: user)
             }
         .navigationBarTitle(Text("Dialog"))
         }
